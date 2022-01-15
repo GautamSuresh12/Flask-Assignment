@@ -3,18 +3,18 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def name():
+def myname():
     return 'My name is Gautam'
 
-@app.route('/')
+@app.route('/college')
 def college():
     return 'Currently pursuing in Sethu Institue of Technology'
 
-@app.route('/')
+@app.route('/address')
 def address():
     return 'Address - Meenakshi nagar, Opp to fatima college, Vilangudi'
 
-@app.route('/')
+@app.route('/city')
 def city():
     return 'I live in Madurai City'
 

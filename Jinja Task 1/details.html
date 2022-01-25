@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>details</title>
+</head>
+<body>
+    <h1>Madurai Details</h1>
+
+      <table border="1px solid black">
+
+            <tr>
+                <th> Country </th>
+                <th> State </th>
+                <th> City </th>
+            </tr>
+            <tr>
+                {% for details in data %}
+                <td>{{ country }}</td>
+                <td>{{ state }}</td>
+                <td>{{ city }}</td>
+                {% endfor %}
+            </tr>
+
+            <tr>
+                <td> India </td>
+                <td> Tamilnadu </td>
+                <td> Madurai </td>
+            </tr>
+      </table>
+
+</body>
+</html>

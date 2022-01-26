@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>personalities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <table border="1px solid black">
+    <tr>
+      <th> Name </th>
+      <th> Gender </th>
+      <th> age </th>
+      <th> comment </th>
+    </tr>
+    {% for Name,Gender,age in data %}
+      <tr>
+        <td> {{ Name }} </td>
+        <td> {{ Gender }} </td>
+        <td> {{ age }} </td>
+            {% if age <= 25 %}
+                <td class="young"> Young </td>
+            {% elif age >= 25 and age <= 60 %}
+                <td class="getold"> Getting old </td>
+            {% else %}
+                <td class="old"> Old </td>
+            {% endif %}
+      </tr>
+    {% endfor %}
+
+  </table>
+
+</body>
+</html>
